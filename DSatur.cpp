@@ -18,7 +18,7 @@ int main(int argc, char const *argv[])
 	//Creamos un puntero de tipo FILE
 	FILE *fp;
 	//Abrimos el archivo a leer
- 	if((fp = fopen ("graphs\\g2.txt", "r" ))==NULL){
+ 	if((fp = fopen ("graphs\\g3.txt", "r" ))==NULL){
  		printf("No se pudo leer el archivo\n");
  		return 0;
  	}
@@ -47,7 +47,7 @@ int main(int argc, char const *argv[])
  	//Imprimimos el grafo
  	for(int i = 0; i < num; i++){
  		for (int j = 0; j < num; ++j)
- 			printf("%d",graph[i][j]);
+ 			printf("%d ",graph[i][j]);
     printf("\n");
  	}
 
