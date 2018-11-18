@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include <time.h>
 //Creamos la matriz que representa el grafo
 int **graph=NULL;
 int *colored=NULL;
@@ -50,7 +51,8 @@ int main(int argc, char const *argv[])
  			printf("%d ",graph[i][j]);
     printf("\n");
  	}
-
+	clock_t ti, tf;
+  ti = clock();//Comienza a medir el tiempo
   //Algoritmo DSatur
   //1. Seleccionar el nodo inicial (nodo con mallor grado)
   int actNode=getMaxGradeNode();
@@ -72,8 +74,10 @@ int main(int argc, char const *argv[])
     //6. Marcarlo como visitado
     visited++;
   }
+	tf = clock();//Termina de medir el tiempo
   printf("Numero minimo de colores: %d\n",colors);
-
+	double segundos = (double)(tf - ti) / CLOCKS_PER_SEC;
+	printf("\nTiempo de ejecucion: %lf Segundos\n",segundos);
 	free(fp);
 	free(graph);
 	free(colored);
