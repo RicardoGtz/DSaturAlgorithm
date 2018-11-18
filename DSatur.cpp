@@ -22,7 +22,7 @@ int main(int argc, char const *argv[])
  		printf("No se pudo leer el archivo\n");
  		return 0;
  	}
-	//lemos los datos
+	//leemos los datos
  	fscanf(fp, "%d" ,&num);
   colored= (int*)malloc(num*sizeof(int*));
  	graph = (int**)malloc(num*sizeof(int*));
