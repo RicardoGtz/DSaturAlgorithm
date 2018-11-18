@@ -73,6 +73,11 @@ int main(int argc, char const *argv[])
     visited++;
   }
   printf("Numero minimo de colores: %d\n",colors);
+
+	free(fp);
+	free(graph);
+	free(colored);
+	return 0;
 }
 //obtiene el grado de un nodo
 int getNodeGrade(int index){
