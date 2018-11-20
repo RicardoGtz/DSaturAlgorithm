@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
 	//Creamos un puntero de tipo FILE
 	FILE *fp;
 	//Abrimos el archivo a leer
- 	if((fp = fopen ("graphs\\g3.txt", "r" ))==NULL){
+ 	if((fp = fopen ("graphs\\tam.txt", "r" ))==NULL){
  		printf("No se pudo leer el archivo\n");
  		return 0;
  	}
