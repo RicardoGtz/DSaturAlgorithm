@@ -54,7 +54,7 @@ int main(int argc, char const *argv[])
 	clock_t ti, tf;
   ti = clock();//Comienza a medir el tiempo
   //Algoritmo DSatur
-  //1. Seleccionar el nodo inicial (nodo con mallor grado)
+  //1. Seleccionar el nodo inicial (nodo con mayor grado)
   int actNode=getMaxGradeNode();
   //2. Asignar el color de menor grado al nodo
   setColor(actNode);
